@@ -32,3 +32,4 @@ try:
     plt.show()
 except:
     print("Some Error...")
+    
