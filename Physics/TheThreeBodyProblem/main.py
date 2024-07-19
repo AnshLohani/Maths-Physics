@@ -4,37 +4,17 @@ import random
 
 
 #Defining Initial Locations 
-def location_a(a):
+def vectorpos(x):
     '''
-    a --> list()
-    a = [x1,y1] --> 2D cordinates of body "a"
+    x --> list()
+    x = [x1,y1] --> 2D cordinates of body "a"
         
     returns a vector 'va' } nested list
-    Format: va = [ [ax,i] [ay,j] ]
+    Format: x = [ [ax,i] [ay,j] ]
     ''' 
-    va = [[a[0],"i"],[a[1],"j"]]
-    return va
+    vx = [[x[0],"i"],[x[1],"j"]]
+    return vx
         
-
-def location_b(b):
-    '''
-    b --> list()
-    b = [x2,y2] --> 2D cordinates of body "b"
-    returns a vector 'vb' } nested list
-    Format: vb = [ [bx,i] [by,j] ]
-    ''' 
-    vb = [[b[0],"i"],[b[1],"j"]]
-    return vb
-
-def location_c(c):
-    '''
-    c --> list()
-    c = [x3,y3] --> 2D cordinates of body "c"
-    returns a vector 'vc' } nested list
-    Format: cb = [ [cx,i] [cy,j] ]
-    ''' 
-    vc = [[c[0],"i"],[c[1],"j"]]
-    return vc
     
 def vel_a():
         ...
@@ -98,7 +78,9 @@ print(simulation)
 
 
 while True:
-    la = location_a([t1.xcor(),t1.ycor()])
+    la = vectorpos([t1.xcor(),t1.ycor()])
+    lb = vectorpos([t2.xcor(),t2.ycor()])
+    lc = vectorpos([t3.xcor(),t3.ycor()])
 
     screen.update()
 
