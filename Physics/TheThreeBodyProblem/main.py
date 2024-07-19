@@ -51,25 +51,40 @@ screen.bgcolor("black")
 screen.setup(width=1080, height=720)
 
 
-#initial random cordinates of the 3 bodies
-initial_cordinates = []
+# Body definitions (mass, radius, color)
+bodies = [
+    [10, 20],
+    [15, 20],
+    [20, 20],
+]
+
+# Create the turtles for each body
+turtles = []
+for body in bodies:
+    t = turtle.Turtle()
+    t.shape("circle")
+    t.shapesize(body[1] / 10)  # Scale circle size based on radius
+    t.color("white")
+    turtles.append(t)
+
+# Random starting positions (within screen boundaries)
+for t in turtles:
+    t.penup()
+    x = random.randint(-screen.window_width() // 2 + body[1], screen.window_width() // 2 - body[1])
+    y = random.randint(-screen.window_height() // 2 + body[1], screen.window_height() // 2 - body[1])
+#    z = random.randint(-screen.window_height() // 2 + body[1], screen.window_height() // 2 - body[1])
+    t.setx(x)
+    t.sety(y)
+    t.pendown()
+    
 while True:
-    x=random.randint(-540,540)
-    y=random.randint(-360,360)
-    c = [x,y]
-    if c not in initial_cordinates:
-        initial_cordinates.append(c)
-        if len(initial_cordinates)==3:
-            break
-        else:
-            continue     
-    else:
-        pass
+    for t in turtles:
+        # Random change in direction
+        t.setheading(random.randint(0, 360))
+        # Move forward based on mass (larger = slower)
+        t.forward(10)
 
-
-
-
-
+    screen.update()
 
 
 
