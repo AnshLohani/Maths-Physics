@@ -1,4 +1,3 @@
-import math 
 import turtle
 import random 
 
@@ -36,9 +35,45 @@ class initial_conditions:
         ''' 
         vc = [[c[0],"i"],[c[1],"j"],[c[2],"k"]]
         return vc
+    
+    def vel_a():
+        ...
+
+    def vel_b():
+        ...
+    def vel_c():
+        ...
 
 
 #Making a screen!
 screen = turtle.Screen()
 screen.bgcolor("black")
-screen.setup(width=600, height=600)
+screen.setup(width=1080, height=720)
+
+
+#initial random cordinates of the 3 bodies
+initial_cordinates = []
+while True:
+    x=random.randint(-540,540)
+    y=random.randint(-360,360)
+    c = [x,y]
+    if c not in initial_cordinates:
+        initial_cordinates.append(c)
+        if len(initial_cordinates)==3:
+            break
+        else:
+            continue     
+    else:
+        pass
+
+
+
+
+
+
+
+
+
+
+
+screen.exitonclick()
