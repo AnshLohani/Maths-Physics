@@ -1,4 +1,6 @@
 import math 
+import turtle
+import random 
 
 #Defining Initial Conditions of Bodies a, b, c.
 class initial_conditions:
@@ -35,3 +37,8 @@ class initial_conditions:
         vc = [[c[0],"i"],[c[1],"j"],[c[2],"k"]]
         return vc
 
+
+#Making a screen!
+screen = turtle.Screen()
+screen.bgcolor("black")
+screen.setup(width=600, height=600)
