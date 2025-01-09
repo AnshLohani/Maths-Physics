@@ -1,0 +1,33 @@
+1. Engine Configuration and Design
+    Number of Cylinders: Inline-4, V6, V8, etc.
+    Firing Order: Factory-determined sequence.
+    Engine Size (Displacement): Fixed by manufacturer design.
+    Forced Induction: Turbocharged or naturally aspirated setup.
+2. Exhaust System Design (Factory Components)
+    Exhaust Manifold/Headers: Factory length and design.
+    Exhaust Pipe Length and Diameter: Standard sizing from the manufacturer.
+    Muffler Design: Factory-installed mufflers.
+    Catalytic Converters: Required for emissions compliance.
+    Resonators: Typically included in stock systems.
+    Material: OEM choice, usually stainless steel or mild steel.
+3. Exhaust Flow Dynamics
+    Backpressure: Set by factory system design.
+    Flow Rate: Dependent on factory exhaust setup.
+    Pulse Timing: Inherent to engine and manifold design.
+4. Engine RPM
+    Higher RPM: Affects tone as part of the engine's natural operation.
+    Lower RPM: Produces a deeper note in stock configurations.
+5. Combustion Characteristics
+    Compression Ratio: Set by engine design.
+    Fuel Type: Gasoline or diesel as per factory configuration.
+    Air-Fuel Ratio: Managed by stock ECU programming for efficiency/emissions.
+6. Vehicle-Specific Factors
+    Chassis Resonance: Factory body structure and materials.
+    Placement of Exhaust Exit: Determined by vehicle design (rear, side, etc.).
+    Noise Insulation: Stock cabin soundproofing.
+7. Environmental and External Factors
+    Surroundings: Not part of the car but impacts perception.
+    Temperature and Air Density: Natural, external influence.
+8. Vibrations and Harmonics
+    Harmonic Resonance: Factory-tuned natural frequencies.
+    Material Thickness: OEM materials used in the exhaust system.
